@@ -40,7 +40,7 @@
             <h1 class="login-title">Регистрация</h1>
             <input type="text" class="login-input" name="username" placeholder="Имя пользователя" required />
             <input type="text" class="login-input" name="email" placeholder="Email">
-            <input type="password" class="login-input" name="password" placeholder="Пароль">
+            <input required type="password" class="login-input" name="password" placeholder="Пароль">
             <input type="submit" name="submit" value="Зарегистрировать" class="login-button">
             <p class="link"><a href="login.php">Нажмите для входа.</a></p>
         </form>
