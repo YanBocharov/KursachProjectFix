@@ -9,7 +9,7 @@
 
 <body>
     <?php
-    require('db.php');
+    require('../config/db.php');
     session_start();
     if (isset($_POST['username'])) {
         $username = stripslashes($_REQUEST['username']);
@@ -34,8 +34,9 @@
         ?>
         <form class="form" method="post" name="login">
             <h1 class="login-title">Войти</h1>
-            <input type="text" class="login-input" name="username" placeholder="Имя пользователя" autofocus="true" />
-            <input type="password" class="login-input" name="password" placeholder="Пароль" />
+            <input required type="text" class="login-input" name="username" placeholder="Имя пользователя"
+                autofocus="true" />
+            <input required type="password" class="login-input" name="password" placeholder="Пароль" />
             <input type="submit" value="Войти" name="submit" class="login-button" />
             <p class="link"><a href="registration.php">Зарегистрировать нового пользователя</a></p>
         </form>
