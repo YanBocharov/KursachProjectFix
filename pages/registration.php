@@ -9,7 +9,7 @@
 
 <body>
     <?php
-    require('db.php');
+    require('../config/db.php');
     // Когда форма подтверждена, данные вставляются в базу данных.
     if (isset($_REQUEST['username'])) {
         $username = stripslashes($_REQUEST['username']);
